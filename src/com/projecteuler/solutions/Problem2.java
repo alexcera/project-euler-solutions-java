@@ -9,7 +9,7 @@ package com.projecteuler.solutions;
  * By considering the terms in the Fibonacci sequence whose values do not exceed
  * four million, find the sum of the even-valued terms.
  * 
- * @author Xander Cera
+ * @author Alex Cera
  * 
  */
 public class Problem2 {
@@ -22,7 +22,7 @@ public class Problem2 {
 		while (nextNum < 4000000) {
 			nextNum = pipe[0] + pipe[1];
 			if (nextNum % 2 == 0) {
-				sum = sum + nextNum;
+				sum += nextNum;
 			}
 			pipe[0] = pipe[1];
 			pipe[1] = nextNum;
